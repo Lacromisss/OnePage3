@@ -1,0 +1,464 @@
+﻿@using WebApplication3.ViewModel
+@model Vm
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+ <section id="Intro">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="img1">
+            <img src="~/images/kameron-kincade-A4PW_x1XrL4-unsplash (1).jpg" alt="" width="100%" height="350px" />
+          </div>
+        </div>
+        <div class="formss"> 
+          <div class="frm"> 
+          <form id="contact" action="" method="post">
+            <h3>Search Car</h3>
+            <fieldset>
+              <input placeholder="Pick up Location" type="text" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+              <input placeholder="Drop up location" type="email" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+              <input placeholder="Pick date" type="tel" tabindex="3" required>
+            </fieldset>
+            <fieldset>
+              <input placeholder="DROP Date" type="url" tabindex="4" required>
+            </fieldset>
+            
+            <fieldset>
+              <button type="button" class="btn btn-warning">Serch now</button>
+            </fieldset>
+          </form>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cub"></div>
+  </section>
+
+  <!--main1 ---end-->
+  <section id="Two">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="tag1">
+            <p>OUR BEST OFFERS</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="tag2">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a
+              arcu eu justo euismod rutrum. Quisque id enim ac tortor
+              malesuada vestibulum non quis turpis. Ut eget ornare arcu.
+              Suspendisse velit mi, pulvinar sed mauris eget, efficitur tempor
+              ex.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <ul class="Ul1">
+          <li>
+            <div class="cartt">
+              <div class="img1"><img src="~/images/car.png" alt="" /></div>
+              <div class="txt1">
+                <h5>Featured Luxury Cars</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, onsectetuer adipiscing
+                  elitcommodo ligula eget dolor.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="cartt">
+              <div class="img1"><img src="~/images/car.png" alt="" /></div>
+              <div class="txt1">
+                <h5>Featured Luxury Cars</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, onsectetuer adipiscing
+                  elitcommodo ligula eget dolor.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="cartt">
+              <div class="img1"><img src="~/images/car.png" alt="" /></div>
+              <div class="txt1">
+                <h5>Featured Luxury Cars</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, onsectetuer adipiscing
+                  elitcommodo ligula eget dolor.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <div class="img2"><img src="~/images/car2.png" alt="" /></div>
+      </div>
+      <div class="col-md-4">
+        <ul class="Ul2">
+          <li>
+            <div class="cartt">
+              <div class="img1"><img src="~/images/car.png" alt="" /></div>
+              <div class="txt1">
+                <h5>Featured Luxury Cars</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, onsectetuer adipiscing
+                  elitcommodo ligula eget dolor.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="cartt">
+              <div class="img1"><img src="~/images/car.png" alt="" /></div>
+              <div class="txt1">
+                <h5>Featured Luxury Cars</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, onsectetuer adipiscing
+                  elitcommodo ligula eget dolor.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="cartt">
+              <div class="img1"><img src="~/images/car.png" alt="" /></div>
+              <div class="txt1">
+                <h5>Featured Luxury Cars</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, onsectetuer adipiscing
+                  elitcommodo ligula eget dolor.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <section id="three">
+    <div class="All1">
+      <div class="cotainer">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title1">
+              <h3>VEHICLE MODELS</h3>
+              <h3>FOR RENT</h3>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <ul class="Ul3">
+                @foreach (var item in Model.catagory)
+               {
+                                 <li>@item.Model</li>
+
+               }
+          
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <div class="img2"><img src="~/images/car3.jpg" alt="" /></div>
+          </div>
+          <div class="col-md-4">
+            <ul class="Ul4">
+              <li class="Li1">
+                <p>Model</p>
+                <p class="P1">Musi</p>
+              </li>
+              <li class="Li1">
+                <p>Model</p>
+                <p class="P1">Musi</p>
+              </li>
+              <li class="Li1">
+                <p>Model</p>
+                <p class="P1">Musi</p>
+              </li>
+              <li class="Li1">
+                <p>Model</p>
+                <p class="P1">Musi</p>
+              </li>
+              <li class="Li1">
+                <p>Model</p>
+                <p class="P1">Musi</p>
+              </li>
+              <li class="Li1">
+                <p>Model</p>
+                <p class="P1">Musi</p>
+              </li>
+              <li class="Li1">
+                <p>Model</p>
+                <p class="P1">Musi</p>
+              </li>
+              <li class="Li1">
+                <button type="button" class="btn btn-primary btn-lg">
+                  Ressive Now
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="four">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="img4">
+            <img src="~/images/bg3.jfif" alt="" width="2000px" height="250px" />
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="kub1">
+            <div class="List1">
+              <ul>
+                <li>
+                  <div class="img4">
+                    <img src="~/images/human.png" alt="" />
+                  </div>
+                </li>
+                <li class="Li5">399</li>
+                <li class="Li5">Happy Clinets</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="kub1">
+            <div class="List1">
+              <ul>
+                <li>
+                  <div class="img4">
+                    <img src="~/images/human.png" alt="" />
+                  </div>
+                </li>
+                <li class="Li5">399</li>
+                <li class="Li5">Happy Clinets</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="kub1">
+            <div class="List1">
+              <ul>
+                <li>
+                  <div class="img4">
+                    <img src="~/images/human.png" alt="" />
+                  </div>
+                </li>
+                <li class="Li5">399</li>
+                <li class="Li5">Happy Clinets</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="kub1">
+            <div class="List1">
+              <ul>
+                <li>
+                  <div class="img4">
+                    <img src="~/images/human.png" alt="" />
+                  </div>
+                </li>
+                <li class="Li5">399</li>
+                <li class="Li5">Happy Clinets</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="five">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="tag1">
+            <p>OUR BEST OFFERS</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="tag2">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a
+              arcu eu justo euismod rutrum. Quisque id enim ac tortor
+              malesuada vestibulum non quis turpis. Ut eget ornare arcu.
+              Suspendisse velit mi, pulvinar sed mauris eget, efficitur tempor
+              ex.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 employee-1">
+          <div class="employee">
+            <div class="employee-image">
+              <img src="https://www.duraplas.com.au/wp-content/uploads/2015/08/Smiling-young-casual-man-2.png"
+                class="img-fluid d-block m-auto" alt="employee-image" />
+            </div>
+            <div class="employee-details">
+              <div class="employee-name">
+                <h1 class="text-center">
+                  Musi<br /><span class="employee-role">Proqramci</span>
+                </h1>
+              </div>
+              <div class="employee-social-link">
+                <ul>
+                  <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+                  <li>
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                  </li>
+                  <li><i class="fa fa-behance" aria-hidden="true"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 employee-1">
+          <div class="employee">
+            <div class="employee-image">
+              <img src="https://www.duraplas.com.au/wp-content/uploads/2015/08/Smiling-young-casual-man-2.png"
+                class="img-fluid d-block m-auto" alt="employee-image" />
+            </div>
+            <div class="employee-details">
+              <div class="employee-name">
+                <h1 class="text-center">
+                  Musi<br /><span class="employee-role">Proqramci</span>
+                </h1>
+              </div>
+              <div class="employee-social-link">
+                <ul>
+                  <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+                  <li>
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                  </li>
+                  <li><i class="fa fa-behance" aria-hidden="true"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 employee-1">
+          <div class="employee">
+            <div class="employee-image">
+              <img src="https://www.duraplas.com.au/wp-content/uploads/2015/08/Smiling-young-casual-man-2.png"
+                class="img-fluid d-block m-auto" alt="employee-image" />
+            </div>
+            <div class="employee-details">
+              <div class="employee-name">
+                <h1 class="text-center">
+                  Musi<br /><span class="employee-role">Proqramci</span>
+                </h1>
+              </div>
+              <div class="employee-social-link">
+                <ul>
+                  <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+                  <li>
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                  </li>
+                  <li><i class="fa fa-behance" aria-hidden="true"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <section id="sliddd">
+  
+         
+     
+    <div id="slider">
+      <ul>
+              @foreach (var item in Model.Sliders)
+     {
+        <li>
+        <div class="slider-container">
+          <p>@item.Description</p>
+          <div class="Mustafaa"><div class="img7"><img src="./images/@item.Images" alt=""></div><div class="txt7"><p>@item.FullName </p></div></div>
+          <br>
+          <div class="txt10">          <p>@item.Lorem</p>
+          </div>
+        </div>
+        </li>
+     }
+        </ul>
+        </div>
+      
+  </section>
+  <section class="yeddi">
+    <div class="container"><div class="row">
+      <div class="col-md-12">
+        <div class="tag1">
+          <p>OUR BLOG  </p>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="tag2">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a
+            arcu eu justo euismod rutrum. Quisque id enim ac tortor
+            malesuada vestibulum non quis turpis. Ut eget ornare arcu.
+            Suspendisse velit mi, pulvinar sed mauris eget, efficitur tempor
+            ex.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="~/images/almaa.jfif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="~/images/almaa.jfif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="~/images/almaa.jfif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      
+    </div></div>
+  </section>
